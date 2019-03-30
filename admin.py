@@ -35,6 +35,7 @@ class TopicView(AdminView):
         super(TopicView, self).__init__(*args, **kwargs)
 
     column_list = ('title', 'date_created', 'date_modified', 'total_vote_count', 'status')
+
     column_searchable_list = ('title',)
     column_default_sort = ('date_created', True)
     column_filters = ('status',)
